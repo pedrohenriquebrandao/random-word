@@ -29,7 +29,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex container min-h-screen flex-col items-center justify-between p-24 bg-gray-100">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gray-100">
       <button
         onClick={getWord}
         type="button"
@@ -38,7 +38,7 @@ export default function Home() {
         NOVA PALAVRA
       </button>
 
-      <div className="flex min-h-screen flex-col items-center justify-between p-8 mt-8 text-gray-900">
+      <div className="flex container min-h-screen flex-col items-center justify-between p-8 mt-8 text-gray-900">
         {empty ? (
           <h1 className="lg:text-5xl text-4xl text-red-500 bg-red-100 border border-red-500 rounded-lg p-4">
             {word}
